@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TJW.UI", "TJW.UI\TJW.UI.csproj", "{1DC8B677-AB34-474F-B070-223B79E53DC4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TJW.Model", "TJW.Model\TJW.Model.csproj", "{ED033310-24A1-42FD-A295-3B8DE10E8A97}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TJW.SqlHandler", "TJW.SqlHandler\TJW.SqlHandler.csproj", "{47B55A49-188D-4D36-9CE4-A7C77240B1F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TJW.Utils", "TJW.Utils\TJW.Utils.csproj", "{3BD1DA75-8082-447E-AD5B-B3087CC37E88}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TJW.HtmlOuts", "TJW.HtmlOuts\TJW.HtmlOuts.csproj", "{8CC82BCD-C413-4EF7-A6B6-C49D070A4EFF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TJW.WeChatHandler", "TJW.WeChatHandler\TJW.WeChatHandler.csproj", "{8ABA4137-2940-4D18-BD4F-98A7972D9359}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TJW.Bank", "TJW.Bank\TJW.Bank.csproj", "{B211E1A4-9587-4C79-B896-036373931B8F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1DC8B677-AB34-474F-B070-223B79E53DC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DC8B677-AB34-474F-B070-223B79E53DC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DC8B677-AB34-474F-B070-223B79E53DC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DC8B677-AB34-474F-B070-223B79E53DC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED033310-24A1-42FD-A295-3B8DE10E8A97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED033310-24A1-42FD-A295-3B8DE10E8A97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED033310-24A1-42FD-A295-3B8DE10E8A97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED033310-24A1-42FD-A295-3B8DE10E8A97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47B55A49-188D-4D36-9CE4-A7C77240B1F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47B55A49-188D-4D36-9CE4-A7C77240B1F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47B55A49-188D-4D36-9CE4-A7C77240B1F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47B55A49-188D-4D36-9CE4-A7C77240B1F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BD1DA75-8082-447E-AD5B-B3087CC37E88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BD1DA75-8082-447E-AD5B-B3087CC37E88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BD1DA75-8082-447E-AD5B-B3087CC37E88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BD1DA75-8082-447E-AD5B-B3087CC37E88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CC82BCD-C413-4EF7-A6B6-C49D070A4EFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CC82BCD-C413-4EF7-A6B6-C49D070A4EFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CC82BCD-C413-4EF7-A6B6-C49D070A4EFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CC82BCD-C413-4EF7-A6B6-C49D070A4EFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8ABA4137-2940-4D18-BD4F-98A7972D9359}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8ABA4137-2940-4D18-BD4F-98A7972D9359}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8ABA4137-2940-4D18-BD4F-98A7972D9359}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8ABA4137-2940-4D18-BD4F-98A7972D9359}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B211E1A4-9587-4C79-B896-036373931B8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B211E1A4-9587-4C79-B896-036373931B8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B211E1A4-9587-4C79-B896-036373931B8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B211E1A4-9587-4C79-B896-036373931B8F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

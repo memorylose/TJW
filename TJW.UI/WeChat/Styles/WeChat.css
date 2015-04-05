@@ -1,0 +1,47 @@
+﻿body, html {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #F8F7F5;
+}
+
+.clear {
+    clear: both;
+}
+
+/*----------------------------------Detail----------------------------------*/
+.detail_title {
+    width: 92%;
+    margin:0 auto;
+    text-align: left;
+    font-size: 3.5em;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    font-weight:bold;
+    border:1px solid red;
+}
+.detail_time {
+    width: 92%;
+    margin:0 auto;
+    text-align: left;
+    font-size: 1em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    border:1px solid red;
+}
+
+.detail_contents {
+    width: 92%;
+    padding-bottom: 20px;
+    margin: 0 auto;
+    background-color: white;
+    color: #636363;
+    font-size: 2.5em;
+}
+
+    .detail_contents p {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }

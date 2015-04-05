@@ -1,0 +1,847 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1DC8B677-AB34-474F-B070-223B79E53DC4}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TJW.UI</RootNamespace>
+    <AssemblyName>TJW.UI</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\cass.fan\Desktop\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PagerHelper, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\cass.fan\Desktop\PagerHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery">
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.1.8.2\lib\net40\AspNet.ScriptManager.jQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery.UI.Combined">
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.UI.Combined.1.8.24\lib\net40\AspNet.ScriptManager.jQuery.UI.Combined.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=4.4.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Providers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Providers.Core.1.2\lib\net40\System.Web.Providers.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.Core.4.1.4.12333\lib\net40-full\DotNetOpenAuth.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.OAuth.Core.4.1.4.12333\lib\net40-full\DotNetOpenAuth.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth.Consumer, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.OAuth.Consumer.4.1.4.12333\lib\net40-full\DotNetOpenAuth.OAuth.Consumer.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OpenId, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.OpenId.Core.4.1.4.12333\lib\net40-full\DotNetOpenAuth.OpenId.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OpenId.RelyingParty, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.OpenId.RelyingParty.4.1.4.12333\lib\net40-full\DotNetOpenAuth.OpenId.RelyingParty.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.AspNet, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.AspNet.4.1.4.12333\lib\net40-full\DotNetOpenAuth.AspNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Membership.OpenAuth, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Membership.OpenAuth.1.0.1\lib\net40\Microsoft.AspNet.Membership.OpenAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.FriendlyUrls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.0\lib\net40\Microsoft.AspNet.FriendlyUrls.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AdImages\ad1.jpg" />
+    <Content Include="AdImages\erweima.jpg" />
+    <Content Include="AdImages\indexa_d2.jpg" />
+    <Content Include="AdminImages\adminlogo.png" />
+    <Content Include="AdminImages\a_login_btn.png" />
+    <Content Include="AdminImages\Edit.png" />
+    <Content Include="AdminImages\icn_alert_error.png" />
+    <Content Include="AdminImages\icn_alert_success.png" />
+    <Content Include="AdminImages\mainLogo.png" />
+    <Content Include="AlipayPage\notify_url.aspx" />
+    <Content Include="AlipayPage\return_url.aspx" />
+    <Content Include="bin\AspNet.ScriptManager.jQuery.dll" />
+    <Content Include="bin\AspNet.ScriptManager.jQuery.UI.Combined.dll" />
+    <Content Include="bin\DotNetOpenAuth.AspNet.dll" />
+    <Content Include="bin\DotNetOpenAuth.Core.dll" />
+    <Content Include="bin\DotNetOpenAuth.OAuth.Consumer.dll" />
+    <Content Include="bin\DotNetOpenAuth.OAuth.dll" />
+    <Content Include="bin\DotNetOpenAuth.OpenId.dll" />
+    <Content Include="bin\DotNetOpenAuth.OpenId.RelyingParty.dll" />
+    <Content Include="bin\EntityFramework.dll" />
+    <Content Include="bin\Microsoft.AspNet.FriendlyUrls.dll" />
+    <Content Include="bin\Microsoft.AspNet.Membership.OpenAuth.dll" />
+    <Content Include="bin\Microsoft.Web.Infrastructure.dll" />
+    <Content Include="bin\PagerHelper.dll" />
+    <Content Include="bin\System.Web.Providers.dll" />
+    <Content Include="bin\TJW.HtmlOuts.dll" />
+    <Content Include="bin\TJW.HtmlOuts.pdb" />
+    <Content Include="bin\TJW.Model.dll" />
+    <Content Include="bin\TJW.Model.pdb" />
+    <Content Include="bin\TJW.SqlHandler.dll" />
+    <Content Include="bin\TJW.SqlHandler.pdb" />
+    <Content Include="bin\TJW.UI.dll" />
+    <Content Include="bin\TJW.UI.pdb" />
+    <Content Include="bin\TJW.Utils.dll" />
+    <Content Include="bin\TJW.Utils.pdb" />
+    <Content Include="CY\CYDetail.aspx" />
+    <Content Include="CY\Index.aspx" />
+    <Content Include="Detail.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\bg.png" />
+    <Content Include="Images\cart_img.png" />
+    <Content Include="Images\error.png" />
+    <Content Include="Images\info.png" />
+    <Content Include="Images\kefuda.png" />
+    <Content Include="Images\login1.png" />
+    <Content Include="Images\login2.png" />
+    <Content Include="Images\logo.png" />
+    <Content Include="Images\logo2.png" />
+    <Content Include="Images\logo3.png" />
+    <Content Include="Images\regist.png" />
+    <Content Include="Images\result_y.png" />
+    <Content Include="Images\rmtj.png" />
+    <Content Include="Images\success.png" />
+    <Content Include="Images\themes.gif" />
+    <Content Include="Index.aspx" />
+    <Content Include="List.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="Logout.aspx" />
+    <Content Include="MyCart.aspx" />
+    <Content Include="NewsDetail.aspx" />
+    <Content Include="NewsList.aspx" />
+    <Content Include="Order.aspx" />
+    <Content Include="Register.aspx" />
+    <Content Include="RegistWaiting.aspx" />
+    <Content Include="SampleImages\1.jpg" />
+    <Content Include="SampleImages\1_thumb.jpg" />
+    <Content Include="SampleImages\2.jpg" />
+    <Content Include="SampleImages\2_thumb.jpg" />
+    <Content Include="SampleImages\3.jpg" />
+    <Content Include="SampleImages\3_thumb.jpg" />
+    <Content Include="SampleImages\c1.jpg" />
+    <Content Include="SampleImages\d1.jpg" />
+    <Content Include="SampleImages\de1.jpg" />
+    <Content Include="SampleImages\de2.jpg" />
+    <Content Include="SampleImages\de3.jpg" />
+    <Content Include="SampleImages\de4.jpg" />
+    <Content Include="SampleImages\de5.jpg" />
+    <Content Include="SampleImages\de6.jpg" />
+    <Content Include="SampleImages\l1.jpg" />
+    <Content Include="SampleImages\l10.jpg" />
+    <Content Include="SampleImages\l2.jpg" />
+    <Content Include="SampleImages\l3.jpg" />
+    <Content Include="SampleImages\l4.jpg" />
+    <Content Include="SampleImages\l5.jpg" />
+    <Content Include="SampleImages\l6.jpg" />
+    <Content Include="SampleImages\l7.jpg" />
+    <Content Include="SampleImages\l8.jpg" />
+    <Content Include="SampleImages\l9.jpg" />
+    <Content Include="SampleImages\main1.jpg" />
+    <Content Include="SampleImages\main10.jpg" />
+    <Content Include="SampleImages\main2.jpg" />
+    <Content Include="SampleImages\main3.jpg" />
+    <Content Include="SampleImages\main4.jpg" />
+    <Content Include="SampleImages\main5.jpg" />
+    <Content Include="SampleImages\main6.jpg" />
+    <Content Include="SampleImages\main7.jpg" />
+    <Content Include="SampleImages\main8.jpg" />
+    <Content Include="SampleImages\main9.jpg" />
+    <Content Include="SampleImages\rm1.jpg" />
+    <Content Include="SampleImages\rm2.jpg" />
+    <Content Include="SampleImages\rm3.jpg" />
+    <Content Include="SampleImages\rm4.jpg" />
+    <Content Include="SampleImages\rm5.jpg" />
+    <Content Include="SampleImages\rm6.jpg" />
+    <Content Include="SampleImages\rm7.jpg" />
+    <Content Include="SampleImages\rm8.jpg" />
+    <Content Include="SampleImages\tejia1.jpg" />
+    <Content Include="SampleImages\tejia2.jpg" />
+    <Content Include="SampleImages\tejia3.jpg" />
+    <Content Include="SampleImages\tejia5.jpg" />
+    <Content Include="SampleImages\tejia6.jpg" />
+    <Content Include="SampleImages\tejia7.jpg" />
+    <Content Include="SampleImages\tejia8.jpg" />
+    <Content Include="SampleImages\tejia9.jpg" />
+    <Content Include="SampleImages\tj1.jpg" />
+    <Content Include="SampleImages\tj15.jpg" />
+    <Content Include="SampleImages\tj2.jpg" />
+    <Content Include="SampleImages\tj3.jpg" />
+    <Content Include="SampleImages\tj4.jpg" />
+    <Content Include="SampleImages\tj5.jpg" />
+    <Content Include="SampleImages\tj6.jpg" />
+    <Content Include="SampleImages\tj7.jpg" />
+    <Content Include="SampleImages\tj8.jpg" />
+    <Content Include="SampleImages\top1.png" />
+    <Content Include="SampleImages\top10.jpg" />
+    <Content Include="SampleImages\top11.jpg" />
+    <Content Include="SampleImages\top12.jpg" />
+    <Content Include="SampleImages\top13.jpg" />
+    <Content Include="SampleImages\top14.jpg" />
+    <Content Include="SampleImages\top15.jpg" />
+    <Content Include="SampleImages\top17.jpg" />
+    <Content Include="SampleImages\top2.png" />
+    <Content Include="SampleImages\top3.png" />
+    <Content Include="SampleImages\top4.jpg" />
+    <Content Include="SampleImages\top5.jpg" />
+    <Content Include="SampleImages\top6.png" />
+    <Content Include="SampleImages\top7.png" />
+    <Content Include="SampleImages\top8.jpg" />
+    <Content Include="SampleImages\zz1.jpg" />
+    <Content Include="SampleImages\zz10.jpg" />
+    <Content Include="SampleImages\zz2.jpg" />
+    <Content Include="SampleImages\zz3.jpg" />
+    <Content Include="SampleImages\zz4.jpg" />
+    <Content Include="SampleImages\zz5.jpg" />
+    <Content Include="SampleImages\zz6.jpg" />
+    <Content Include="SampleImages\zz7.jpg" />
+    <Content Include="SampleImages\zz8.jpg" />
+    <Content Include="SampleImages\zz9.jpg" />
+    <Content Include="Scripts\Address.js" />
+    <Content Include="Scripts\Admin.js" />
+    <Content Include="Scripts\AdminLogin.js" />
+    <Content Include="Scripts\Cart.js" />
+    <Content Include="Scripts\extend\layer.ext.js" />
+    <Content Include="Scripts\Index.js" />
+    <Content Include="Scripts\jNotify.jquery.min.js" />
+    <Content Include="Scripts\jquery-1.11.1.min.js" />
+    <Content Include="Scripts\layer.min.js" />
+    <Content Include="Scripts\lib.js" />
+    <Content Include="Scripts\nicEdit.js" />
+    <Content Include="Scripts\nicEditorIcons.gif" />
+    <Content Include="Scripts\responsiveslides.min.js" />
+    <Content Include="Scripts\Regist.js" />
+    <Content Include="Scripts\service.js" />
+    <Content Include="Scripts\skin\default\icon_ext.png" />
+    <Content Include="Scripts\skin\default\textbg.png" />
+    <Content Include="Scripts\skin\default\xubox_ico0.png" />
+    <Content Include="Scripts\skin\default\xubox_loading0.gif" />
+    <Content Include="Scripts\skin\default\xubox_loading1.gif" />
+    <Content Include="Scripts\skin\default\xubox_loading2.gif" />
+    <Content Include="Scripts\skin\default\xubox_loading3.gif" />
+    <Content Include="Scripts\skin\default\xubox_title0.png" />
+    <Content Include="Scripts\skin\layer.css" />
+    <Content Include="Scripts\skin\layer.ext.css" />
+    <Content Include="Service\GradeHelp.aspx" />
+    <Content Include="Service\Introduce.aspx" />
+    <Content Include="Styles\Admin.css" />
+    <Content Include="Styles\AdminCommon.css" />
+    <Content Include="Styles\AdminLogin.css" />
+    <Content Include="Styles\Cart.css" />
+    <Content Include="Styles\Common.css" />
+    <Content Include="Styles\Common_1100.css" />
+    <Content Include="Styles\CY.css" />
+    <Content Include="Styles\Detail.css" />
+    <Content Include="Styles\Index.css" />
+    <Content Include="Styles\jNotify.jquery.css" />
+    <Content Include="Styles\kefu.css" />
+    <Content Include="Styles\List.css" />
+    <Content Include="Styles\Order.css" />
+    <Content Include="Styles\Pager.css" />
+    <Content Include="Styles\R_Login.css" />
+    <Content Include="Styles\UM.css" />
+    <Content Include="Test.aspx" />
+    <Content Include="Test4.aspx" />
+    <Content Include="Test5.html" />
+    <Content Include="TJW_Admin\AddAdminRole.aspx" />
+    <Content Include="TJW_Admin\AddAdminUser.aspx" />
+    <Content Include="TJW_Admin\AddCloth.aspx" />
+    <Content Include="TJW_Admin\AddNews.aspx" />
+    <Content Include="TJW_Admin\AddSameCloth.aspx" />
+    <Content Include="TJW_Admin\AddTea.aspx" />
+    <Content Include="TJW_Admin\AddWeChat.aspx" />
+    <Content Include="TJW_Admin\Income.aspx" />
+    <Content Include="TJW_Admin\Login.aspx" />
+    <Content Include="TJW_Admin\Main.aspx" />
+    <Content Include="TJW_Admin\MngChildCloth.aspx" />
+    <Content Include="TJW_Admin\MngCloth.aspx" />
+    <Content Include="TJW_Admin\MngClothColor.aspx" />
+    <Content Include="TJW_Admin\MngClothPicture.aspx" />
+    <Content Include="TJW_Admin\MngClothSize.aspx" />
+    <Content Include="TJW_Admin\MngClothType.aspx" />
+    <Content Include="TJW_Admin\MngCustomBH.aspx" />
+    <Content Include="TJW_Admin\MngMember.aspx" />
+    <Content Include="TJW_Admin\MngNews.aspx" />
+    <Content Include="TJW_Admin\MngPageShow.aspx" />
+    <Content Include="TJW_Admin\MngPictureType.aspx" />
+    <Content Include="TJW_Admin\MngTea.aspx" />
+    <Content Include="TJW_Admin\MngTeaPic.aspx" />
+    <Content Include="TJW_Admin\MngTeaPicType.aspx" />
+    <Content Include="TJW_Admin\MngTeaType.aspx" />
+    <Content Include="TJW_Admin\MngWeChat.aspx" />
+    <Content Include="TJW_Admin\MngWeChatMessage.aspx" />
+    <Content Include="TJW_Admin\MngWeChatType.aspx" />
+    <Content Include="UC\ServiceLeft.ascx" />
+    <Content Include="UC\SiteBottom.ascx" />
+    <Content Include="UC\SiteTop.ascx" />
+    <Content Include="UC\UMLeft.ascx" />
+    <Content Include="UM\ChangePassword.aspx" />
+    <Content Include="UM\MyAddress.aspx" />
+    <Content Include="UM\MyGrade.aspx" />
+    <Content Include="UM\MyInfo.aspx" />
+    <Content Include="UM\MyOrder.aspx" />
+    <Content Include="VerifyCode.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="WeChat\Detail.aspx" />
+    <Content Include="WeChat\Index.aspx" />
+    <Content Include="WeChat\Styles\WeChat.css" />
+    <Content Include="XML\WeChat.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TJW_Admin\Web.config" />
+    <Content Include="AjaxHandler\UIAjaxHandler.ashx" />
+    <Content Include="bin\TJW.UI.dll.config" />
+    <None Include="Properties\PublishProfiles\MyPublish.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AjaxHandler\UIAjaxHandler.ashx.cs">
+      <DependentUpon>UIAjaxHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="AlipayPage\notify_url.aspx.cs">
+      <DependentUpon>notify_url.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AlipayPage\notify_url.aspx.designer.cs">
+      <DependentUpon>notify_url.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AlipayPage\return_url.aspx.cs">
+      <DependentUpon>return_url.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AlipayPage\return_url.aspx.designer.cs">
+      <DependentUpon>return_url.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CY\CYDetail.aspx.cs">
+      <DependentUpon>CYDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CY\CYDetail.aspx.designer.cs">
+      <DependentUpon>CYDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CY\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CY\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Detail.aspx.cs">
+      <DependentUpon>Detail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Detail.aspx.designer.cs">
+      <DependentUpon>Detail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyCart.aspx.cs">
+      <DependentUpon>MyCart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyCart.aspx.designer.cs">
+      <DependentUpon>MyCart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewsDetail.aspx.cs">
+      <DependentUpon>NewsDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewsDetail.aspx.designer.cs">
+      <DependentUpon>NewsDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewsList.aspx.cs">
+      <DependentUpon>NewsList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewsList.aspx.designer.cs">
+      <DependentUpon>NewsList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Order.aspx.cs">
+      <DependentUpon>Order.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Order.aspx.designer.cs">
+      <DependentUpon>Order.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistWaiting.aspx.cs">
+      <DependentUpon>RegistWaiting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistWaiting.aspx.designer.cs">
+      <DependentUpon>RegistWaiting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Service\GradeHelp.aspx.cs">
+      <DependentUpon>GradeHelp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Service\GradeHelp.aspx.designer.cs">
+      <DependentUpon>GradeHelp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Service\Introduce.aspx.cs">
+      <DependentUpon>Introduce.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Service\Introduce.aspx.designer.cs">
+      <DependentUpon>Introduce.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Test.aspx.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Test.aspx.designer.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Test4.aspx.cs">
+      <DependentUpon>Test4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Test4.aspx.designer.cs">
+      <DependentUpon>Test4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TJW_Admin\AddAdminRole.aspx.cs">
+      <DependentUpon>AddAdminRole.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TJW_Admin\AddAdminRole.aspx.designer.cs">
+      <DependentUpon>AddAdminRole.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TJW_Admin\AddAdminUser.aspx.cs">
+      <DependentUpon>AddAdminUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TJW_Admin\AddAdminUser.aspx.designer.cs">
+      <DependentUpon>AddAdminUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TJW_Admin\AddCloth.aspx.cs">
+      <DependentUpon>AddCloth.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TJW_Admin\AddCloth.aspx.designer.cs">
+      <DependentUpon>AddCloth.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TJW_Admin\AddNews.aspx.cs">
+      <DependentUpon>AddNews.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TJW_Admin\AddNews.aspx.designer.cs">
+      <DependentUpon>AddNews.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TJW_Admin\AddSameCloth.aspx.cs">
+      <DependentUpon>AddSameCloth.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TJW_Admin\AddSameCloth.aspx.designer.cs">
+      <DependentUpon>AddSameCloth.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TJW_Admin\AddTea.aspx.cs">
+      <DependentUpon>AddTea.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TJW_Admin\AddTea.aspx.designer.cs">
+      <DependentUpon>AddTea.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TJW_Admin\AddWeChat.aspx.cs">
+      <DependentUpon>AddWeChat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TJW_Admin\AddWeChat.aspx.designer.cs">
+      <DependentUpon>AddWeChat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TJW_Admin\Income.aspx.cs">
+      <DependentUpon>Income.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TJW_Admin\Income.aspx.designer.cs">
+      <DependentUpon>Income.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TJW_Admin\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TJW_Admin\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TJW_Admin\Main.aspx.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TJW_Admin\Main.aspx.designer.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TJW_Admin\MngChildCloth.aspx.cs">
+      <DependentUpon>MngChildCloth.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TJW_Admin\MngChildCloth.aspx.designer.cs">
+      <DependentUpon>MngChildCloth.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TJW_Admin\MngCloth.aspx.cs">
+      <DependentUpon>MngCloth.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TJW_Admin\MngCloth.aspx.designer.cs">
+      <DependentUpon>MngCloth.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TJW_Admin\MngClothColor.aspx.cs">
+      <DependentUpon>MngClothColor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TJW_Admin\MngClothColor.aspx.designer.cs">
+      <DependentUpon>MngClothColor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TJW_Admin\MngClothPicture.aspx.cs">
+      <DependentUpon>MngClothPicture.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TJW_Admin\MngClothPicture.aspx.designer.cs">
+      <DependentUpon>MngClothPicture.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TJW_Admin\MngClothSize.aspx.cs">
+      <DependentUpon>MngClothSize.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TJW_Admin\MngClothSize.aspx.designer.cs">
+      <DependentUpon>MngClothSize.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TJW_Admin\MngClothType.aspx.cs">
+      <DependentUpon>MngClothType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TJW_Admin\MngClothType.aspx.designer.cs">
+      <DependentUpon>MngClothType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TJW_Admin\MngCustomBH.aspx.cs">
+      <DependentUpon>MngCustomBH.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TJW_Admin\MngCustomBH.aspx.designer.cs">
+      <DependentUpon>MngCustomBH.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TJW_Admin\MngMember.aspx.cs">
+      <DependentUpon>MngMember.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TJW_Admin\MngMember.aspx.designer.cs">
+      <DependentUpon>MngMember.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TJW_Admin\MngNews.aspx.cs">
+      <DependentUpon>MngNews.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TJW_Admin\MngNews.aspx.designer.cs">
+      <DependentUpon>MngNews.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TJW_Admin\MngPageShow.aspx.cs">
+      <DependentUpon>MngPageShow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TJW_Admin\MngPageShow.aspx.designer.cs">
+      <DependentUpon>MngPageShow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TJW_Admin\MngPictureType.aspx.cs">
+      <DependentUpon>MngPictureType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TJW_Admin\MngPictureType.aspx.designer.cs">
+      <DependentUpon>MngPictureType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TJW_Admin\MngTea.aspx.cs">
+      <DependentUpon>MngTea.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TJW_Admin\MngTea.aspx.designer.cs">
+      <DependentUpon>MngTea.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TJW_Admin\MngTeaPic.aspx.cs">
+      <DependentUpon>MngTeaPic.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TJW_Admin\MngTeaPic.aspx.designer.cs">
+      <DependentUpon>MngTeaPic.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TJW_Admin\MngTeaPicType.aspx.cs">
+      <DependentUpon>MngTeaPicType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TJW_Admin\MngTeaPicType.aspx.designer.cs">
+      <DependentUpon>MngTeaPicType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TJW_Admin\MngTeaType.aspx.cs">
+      <DependentUpon>MngTeaType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TJW_Admin\MngTeaType.aspx.designer.cs">
+      <DependentUpon>MngTeaType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TJW_Admin\MngWeChat.aspx.cs">
+      <DependentUpon>MngWeChat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TJW_Admin\MngWeChat.aspx.designer.cs">
+      <DependentUpon>MngWeChat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TJW_Admin\MngWeChatMessage.aspx.cs">
+      <DependentUpon>MngWeChatMessage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TJW_Admin\MngWeChatMessage.aspx.designer.cs">
+      <DependentUpon>MngWeChatMessage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TJW_Admin\MngWeChatType.aspx.cs">
+      <DependentUpon>MngWeChatType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TJW_Admin\MngWeChatType.aspx.designer.cs">
+      <DependentUpon>MngWeChatType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UC\ServiceLeft.ascx.cs">
+      <DependentUpon>ServiceLeft.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UC\ServiceLeft.ascx.designer.cs">
+      <DependentUpon>ServiceLeft.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UC\SiteBottom.ascx.cs">
+      <DependentUpon>SiteBottom.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UC\SiteBottom.ascx.designer.cs">
+      <DependentUpon>SiteBottom.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UC\SiteTop.ascx.cs">
+      <DependentUpon>SiteTop.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UC\SiteTop.ascx.designer.cs">
+      <DependentUpon>SiteTop.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UMLeft.ascx.cs">
+      <DependentUpon>UMLeft.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UC\UMLeft.ascx.designer.cs">
+      <DependentUpon>UMLeft.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UM\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UM\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UM\MyAddress.aspx.cs">
+      <DependentUpon>MyAddress.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UM\MyAddress.aspx.designer.cs">
+      <DependentUpon>MyAddress.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UM\MyGrade.aspx.cs">
+      <DependentUpon>MyGrade.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UM\MyGrade.aspx.designer.cs">
+      <DependentUpon>MyGrade.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UM\MyInfo.aspx.cs">
+      <DependentUpon>MyInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UM\MyInfo.aspx.designer.cs">
+      <DependentUpon>MyInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UM\MyOrder.aspx.cs">
+      <DependentUpon>MyOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UM\MyOrder.aspx.designer.cs">
+      <DependentUpon>MyOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VerifyCode.aspx.cs">
+      <DependentUpon>VerifyCode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VerifyCode.aspx.designer.cs">
+      <DependentUpon>VerifyCode.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WeChat\Detail.aspx.cs">
+      <DependentUpon>Detail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WeChat\Detail.aspx.designer.cs">
+      <DependentUpon>Detail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WeChat\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WeChat\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TJW.Bank\TJW.Bank.csproj">
+      <Project>{b211e1a4-9587-4c79-b896-036373931b8f}</Project>
+      <Name>TJW.Bank</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TJW.HtmlOuts\TJW.HtmlOuts.csproj">
+      <Project>{8cc82bcd-c413-4ef7-a6b6-c49d070a4eff}</Project>
+      <Name>TJW.HtmlOuts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TJW.Model\TJW.Model.csproj">
+      <Project>{ed033310-24a1-42fd-a295-3b8de10e8a97}</Project>
+      <Name>TJW.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TJW.SqlHandler\TJW.SqlHandler.csproj">
+      <Project>{47b55a49-188d-4d36-9ce4-a7c77240b1f0}</Project>
+      <Name>TJW.SqlHandler</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TJW.Utils\TJW.Utils.csproj">
+      <Project>{3bd1da75-8082-447e-ad5b-b3087cc37e88}</Project>
+      <Name>TJW.Utils</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TJW.WeChatHandler\TJW.WeChatHandler.csproj">
+      <Project>{8aba4137-2940-4d18-bd4f-98a7972d9359}</Project>
+      <Name>TJW.WeChatHandler</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\zh-Hans\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51875</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:51875/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

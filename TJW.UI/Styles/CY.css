@@ -1,0 +1,130 @@
+﻿/*---------------------CY---------------------*/
+a {
+    font-family: 微软雅黑;
+}
+
+.cy_center {
+    width: 1090px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.cy_center_left {
+    width: 200px;
+    float: left;
+}
+
+.cy_center_left_gg {
+    width: 190px;
+    border: 1px solid #DDDDDD;
+    margin: 0 auto;
+}
+
+.cy_center_left_gg_top {
+    height: 40px;
+    font-size: 13px;
+    font-weight: bold;
+    border-bottom: 1px dotted #DDDDDD;
+    line-height: 45px;
+    font-family: 微软雅黑;
+    padding-left: 10px;
+    margin: 0 auto;
+    width: 150px;
+}
+
+.cy_center_left_gg_word {
+    width: 140px;
+    margin: 0 auto;
+    padding-top: 10px;
+    font-size: 13px;
+    margin-bottom: 10px;
+    line-height: 17px;
+}
+
+.cy_center_left_fl {
+    width: 190px;
+    border: 1px solid #DDDDDD;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+.cy_center_left_fl_top {
+    height: 30px;
+    font-size: 12px;
+    padding-left: 10px;
+    border-bottom: 1px solid #DDDDDD;
+    line-height: 30px;
+    font-weight: bold;
+    color: #909090;
+    font-family: 微软雅黑;
+}
+
+.cy_center_left_fl_ct {
+    width: 160px;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding-left: 5px;
+    border-bottom: 1px solid #DDDDDD;
+}
+
+.cy_center_left_fl_ct_f {
+    height: 25px;
+    font-size: 13px;
+    line-height: 25px;
+    font-weight: bold;
+}
+
+.cy_center_left_fl_ct_c {
+    height: 25px;
+    font-size: 13px;
+    line-height: 25px;
+}
+
+.cy_center_right {
+    width: 850px;
+    float: left;
+    margin-left: 15px;
+}
+
+.cy_center_r_div {
+    width: 180px;
+    height: 245px;
+    float: left;
+    margin-right: 25px;
+    margin-bottom: 10px;
+}
+
+    .cy_center_r_div img {
+        width: 180px;
+        height: 180px;
+    }
+
+.cy_center_r_money {
+    height: 20px;
+    font-size: 13px;
+    color: #CC002A;
+    line-height: 20px;
+    font-weight: bold;
+    font-family: 微软雅黑;
+}
+
+.cy_center_r_word {
+    height: 35px;
+    font-size: 12px;
+    font-family: 微软雅黑;
+}
+
+    .cy_center_r_word a {
+        color: black;
+    }
+
+        .cy_center_r_word a:hover {
+            text-decoration: underline;
+        }
+
+
+
+.clear {
+    clear: both;
+}

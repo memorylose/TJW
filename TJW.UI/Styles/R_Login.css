@@ -1,0 +1,313 @@
+﻿/*------------------------Regist------------------------*/
+.regist_top {
+    width: 1060px;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.regist_top_logo {
+    width: 120px;
+    height: 50px;
+    float: left;
+}
+
+    .regist_top_logo img {
+        width: 120px;
+        height: 50px;
+    }
+
+.regist_top_word {
+    float: right;
+    font-size: 13px;
+    margin-top: 20px;
+    margin-right: 15px;
+}
+
+    .regist_top_word a {
+        color: #73AC1C;
+        text-decoration: underline;
+    }
+
+.regist_main {
+    width: 1050px;
+    height: 400px;
+    border: 1px solid #DDDDDD;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.regist_main_top {
+    font-size: 14px;
+    color: black;
+    font-family: 微软雅黑;
+    padding-top: 10px;
+    padding-left: 40px;
+    font-weight: bold;
+}
+
+.regist_main_div {
+    height: 30px;
+    margin-top: 15px;
+}
+
+.regist_main_div_word {
+    height: 30px;
+    float: left;
+    font-size: 14px;
+    line-height: 30px;
+    margin-left: 50px;
+    width: 70px;
+}
+
+.regist_main_div_tb {
+    float: left;
+    width: 200px;
+    height: 25px;
+    border: 1px solid #DDDDDD;
+    margin-left: 10px;
+    padding-left: 5px;
+    border-radius: 3px 3px 3px 3px;
+}
+
+.regist_main_div_btn {
+    float: left;
+    width: 130px;
+    height: 30px;
+    background-color: #FF6FA9;
+    border: 0;
+    color: white;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 3px 3px 3px 3px;
+}
+
+.regist_verifyCode {
+    width: 110px;
+    height: 44px;
+    margin-left: 10px;
+    float: left;
+}
+
+.regist_msg {
+    float: left;
+    height: 25px;
+    font-size: 13px;
+    line-height: 32px;
+    padding-left: 30px;
+    color: black;
+    width: 240px;
+    background: url('../Images/regist.png') no-repeat 8% -211px;
+    display: none;
+}
+
+.regist_error {
+    float: left;
+    height: 25px;
+    font-size: 13px;
+    line-height: 32px;
+    padding-left: 30px;
+    color: red;
+    width: 320px;
+    background: url('../Images/regist.png') no-repeat 5% -344px;
+    display: none;
+}
+
+.regist_right {
+    float: left;
+    height: 25px;
+    width: 50px;
+    background: url('../Images/regist.png') no-repeat -8% -244px;
+    display: none;
+}
+
+.regist_back_msg {
+    width: 500px;
+    height: 30px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 30px;
+    color: red;
+    font-size: 13px;
+    font-weight: bold;
+}
+/*------------------------RegistWaiting------------------------*/
+.rw_grade {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 100px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    color:red;
+}
+
+.rw_word {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 14px;
+}
+
+.rw_go {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+    .rw_go a {
+        color: black;
+        text-decoration: underline;
+    }
+
+/*------------------------Login------------------------*/
+.login_main {
+    width: 980px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.login_main_left {
+    width: 406px;
+    float: right;
+    border: 1px solid #DDDDDD;
+    padding-bottom: 20px;
+}
+
+.login_main_left_top {
+    height: 40px;
+    padding-left: 28px;
+    line-height: 40px;
+}
+
+.login_main_left_top_left {
+    width: 200px;
+    height: 40px;
+    float: left;
+    font-size: 16px;
+    line-height: 40px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.login_main_left_top_right {
+    width: 200px;
+    height: 40px;
+    border-left: 1px solid #DDDDDD;
+    border-bottom: 1px solid #DDDDDD;
+    float: left;
+    font-size: 16px;
+    line-height: 40px;
+    text-align: center;
+    font-weight: bold;
+    color: #AAAAAA;
+    cursor: pointer;
+}
+
+.login_yz_input_div {
+    width: 270px;
+    border: 0;
+    height: 32px;
+    margin-left: 28px;
+    margin-top: 20px;
+    display: none;
+}
+
+.login_verifyCode {
+    width: 110px;
+    height: 35px;
+    margin-left: 10px;
+    float: left;
+}
+
+.login_input_div {
+    width: 270px;
+    border: 1px solid #DDDDDD;
+    height: 32px;
+    margin-left: 28px;
+    margin-top: 20px;
+}
+
+    .login_input_div img {
+        width: 15px;
+        height: 14px;
+        margin-top: 9px;
+        margin-left: 7px;
+        float: left;
+    }
+
+.login_input_text {
+    width: 230px;
+    height: 30px;
+    font-size: 14px;
+    border: 0;
+    line-height: 30px;
+    float: left;
+    margin-left: 10px;
+}
+
+.login_input_yz {
+    width: 100px;
+    height: 30px;
+    font-size: 14px;
+    border: 1px solid #DDDDDD;
+    line-height: 30px;
+    float: left;
+    padding-left: 10px;
+}
+
+.login_yzm {
+    width: 270px;
+    border: 1px solid #DDDDDD;
+    height: 40px;
+    margin-left: 68px;
+    margin-top: 20px;
+    display: block;
+}
+
+.login_error_msg {
+    height: 30px;
+    margin: 0 auto;
+    line-height: 30px;
+    color: red;
+    font-size: 13px;
+    font-weight: bold;
+    padding-left: 115px;
+}
+
+.login_dl {
+    width: 270px;
+    height: 40px;
+    margin-left: 28px;
+    margin-top: 20px;
+}
+
+.login_btn {
+    background-color: #80BF20;
+    width: 130px;
+    height: 35px;
+    color: white;
+    font-weight: bold;
+    border: 0;
+    cursor: pointer;
+    float: left;
+    border-radius: 3px 3px 3px 3px;
+}
+
+.login_btn_right {
+    float: left;
+    font-size: 13px;
+    margin-top: 12px;
+    margin-left: 10px;
+}
+
+    .login_btn_right a {
+        color: black;
+        text-decoration: none;
+    }
+
+        .login_btn_right a:hover {
+            text-decoration: underline;
+        }
