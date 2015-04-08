@@ -79,6 +79,9 @@ namespace TJW.UI.TJW_Admin
                 clothModel.StuffUGUID = CommonTools.GenerateGUID("C", true);
                 clothModel.CreateDate = DateTime.Now;
                 clothModel.CreateUserId = LoginUser.UserId;
+                clothModel.CustomBHId = Convert.ToInt32(ds.Tables[0].Rows[0][10]);
+                clothModel.ZheKou = ds.Tables[0].Rows[0][11].ToString();
+
                 sh_cloth.AddCloth(clothModel);
                 Response.Redirect("MngCloth.aspx");
             }

@@ -48,3 +48,13 @@ D:\Project\TJW\Code\TJW\1114\1114\TJW_1114\TJW.Bank\bin\Release\TJW.Model.pdb
 D:\Project\TJW\Code\TJW\1114\1114\TJW_1114\TJW.Bank\obj\Release\TJW.Bank.csprojResolveAssemblyReference.cache
 D:\Project\TJW\Code\TJW\1114\1114\TJW_1114\TJW.Bank\obj\Release\TJW.Bank.dll
 D:\Project\TJW\Code\TJW\1114\1114\TJW_1114\TJW.Bank\obj\Release\TJW.Bank.pdb
+D:\MyGit\TJW\TJW\TJW.Bank\bin\Release\TJW.Bank.dll
+D:\MyGit\TJW\TJW\TJW.Bank\bin\Release\TJW.Bank.pdb
+D:\MyGit\TJW\TJW\TJW.Bank\bin\Release\TJW.Utils.dll
+D:\MyGit\TJW\TJW\TJW.Bank\bin\Release\TJW.Model.dll
+D:\MyGit\TJW\TJW\TJW.Bank\bin\Release\Newtonsoft.Json.dll
+D:\MyGit\TJW\TJW\TJW.Bank\bin\Release\TJW.Utils.pdb
+D:\MyGit\TJW\TJW\TJW.Bank\bin\Release\TJW.Model.pdb
+D:\MyGit\TJW\TJW\TJW.Bank\obj\Release\TJW.Bank.csprojResolveAssemblyReference.cache
+D:\MyGit\TJW\TJW\TJW.Bank\obj\Release\TJW.Bank.dll
+D:\MyGit\TJW\TJW\TJW.Bank\obj\Release\TJW.Bank.pdb

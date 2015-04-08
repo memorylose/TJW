@@ -684,7 +684,7 @@ namespace TJW.SqlHandler
         #region Get cloth info from same cloth
         public DataSet GetSameCloth(int clothId)
         {
-            string strSql = " SELECT ClothId,ClothGuid,StuffUGUID,ClothName,ClothTypeId,OriginalPrice,Price,IsVaild,ShowNum,IsTj FROM TJW_Cloth WHERE ClothId = @ClothId";
+            string strSql = " SELECT ClothId,ClothGuid,StuffUGUID,ClothName,ClothTypeId,OriginalPrice,Price,IsVaild,ShowNum,IsTj,CustomBHId,ZheKou FROM TJW_Cloth WHERE ClothId = @ClothId";
             SqlParameter[] sqlParm = { 
                                      new SqlParameter("@ClothId",SqlDbType.Int)
                                    };

@@ -286,3 +286,11 @@ D:\Project\TJW\Code\TJW\1114\1114\TJW_1114\TJW.Utils\bin\Debug\TJW.Model.pdb
 D:\Project\TJW\Code\TJW\1114\1114\TJW_1114\TJW.Utils\obj\Debug\TJW.Utils.csprojResolveAssemblyReference.cache
 D:\Project\TJW\Code\TJW\1114\1114\TJW_1114\TJW.Utils\obj\Debug\TJW.Utils.dll
 D:\Project\TJW\Code\TJW\1114\1114\TJW_1114\TJW.Utils\obj\Debug\TJW.Utils.pdb
+D:\MyGit\TJW\TJW\TJW.Utils\bin\Debug\TJW.Utils.dll
+D:\MyGit\TJW\TJW\TJW.Utils\bin\Debug\TJW.Utils.pdb
+D:\MyGit\TJW\TJW\TJW.Utils\bin\Debug\TJW.Model.dll
+D:\MyGit\TJW\TJW\TJW.Utils\bin\Debug\Newtonsoft.Json.dll
+D:\MyGit\TJW\TJW\TJW.Utils\bin\Debug\TJW.Model.pdb
+D:\MyGit\TJW\TJW\TJW.Utils\obj\Debug\TJW.Utils.csprojResolveAssemblyReference.cache
+D:\MyGit\TJW\TJW\TJW.Utils\obj\Debug\TJW.Utils.dll
+D:\MyGit\TJW\TJW\TJW.Utils\obj\Debug\TJW.Utils.pdb

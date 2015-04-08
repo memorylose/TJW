@@ -182,8 +182,9 @@ namespace TJW.UI.WeChat
             strBuilder.Append(" {");
             strBuilder.Append("\"button\": [");
             strBuilder.Append("{");
-            strBuilder.Append("\"type\": \"click\",");
+            strBuilder.Append("\"type\": \"view\",");
             strBuilder.Append("\"name\": \"" + ConstValue.WCMenuName1 + "\",");
+            strBuilder.Append("\"url\": \"http://www.tianjiew.com\",");
             strBuilder.Append("\"key\": \"" + ConstValue.WCMenuKey1 + "\"");
             strBuilder.Append("},");
             strBuilder.Append("{");
@@ -192,20 +193,26 @@ namespace TJW.UI.WeChat
             strBuilder.Append("\"key\": \"" + ConstValue.WCMenuKey2 + "\"");
             strBuilder.Append("},");
             strBuilder.Append("{");
-            strBuilder.Append(" \"name\": \"关于天街\",");
-            strBuilder.Append("\"sub_button\": [");
-            strBuilder.Append("{");
             strBuilder.Append("\"type\": \"click\",");
             strBuilder.Append("\"name\": \"" + ConstValue.WCMenuName3_1 + "\",");
             strBuilder.Append("\"key\": \"" + ConstValue.WCMenuKey3_1 + "\"");
-            strBuilder.Append("},");
-            strBuilder.Append("{");
-            strBuilder.Append("\"type\": \"click\",");
-            strBuilder.Append("\"name\": \"" + ConstValue.WCMenuName3_2 + "\",");
-            strBuilder.Append("\"key\": \"" + ConstValue.WCMenuKey3_2 + "\"");
             strBuilder.Append("}");
-            strBuilder.Append(" ]");
-            strBuilder.Append(" }");
+
+            //strBuilder.Append("{");
+            //strBuilder.Append(" \"name\": \"关于天街\",");
+            //strBuilder.Append("\"sub_button\": [");
+            //strBuilder.Append("{");
+            //strBuilder.Append("\"type\": \"click\",");
+            //strBuilder.Append("\"name\": \"" + ConstValue.WCMenuName3_1 + "\",");
+            //strBuilder.Append("\"key\": \"" + ConstValue.WCMenuKey3_1 + "\"");
+            //strBuilder.Append("}");
+            ////strBuilder.Append("{");
+            ////strBuilder.Append("\"type\": \"click\",");
+            ////strBuilder.Append("\"name\": \"" + ConstValue.WCMenuName3_2 + "\",");
+            ////strBuilder.Append("\"key\": \"" + ConstValue.WCMenuKey3_2 + "\"");
+            ////strBuilder.Append("}");
+            //strBuilder.Append(" ]");
+            //strBuilder.Append(" }");
             strBuilder.Append(" ]");
             strBuilder.Append("}");
 

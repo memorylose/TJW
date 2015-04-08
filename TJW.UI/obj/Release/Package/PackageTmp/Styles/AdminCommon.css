@@ -1,0 +1,140 @@
+﻿body, html, form {
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    height: 100%;
+}
+
+div, img, ul, ol, li, dl, dt, dd {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+.input_text {
+    border: 1px solid #DDDDDD;
+    height: 30px;
+    width: 250px;
+    line-height: 30px;
+    padding-left: 10px;
+}
+.label_text {
+    height: 34px;
+    line-height: 34px;
+}
+
+.input_btn {
+    border: 0;
+    height: 35px;
+    width: 100px;
+    line-height: 30px;
+    padding-left: 10px;
+    color: white;
+    background-color: #27A2E6;
+    cursor: pointer;
+    border-radius:3px 3px 3px 3px;
+}
+.input_mulText {
+    border: 1px solid #DDDDDD;
+    height: 200px;
+    width: 250px;
+    padding-left: 10px;
+ 
+}
+
+.dpCls {
+    border: 1px solid #DDDDDD;
+    margin-top: 5px;
+}
+
+.suc_msg {
+    width: 500px;
+    height: 30px;
+    border: 1px solid #79C20D;
+    background-color: #E2F6C5;
+    color: #32512D;
+    line-height: 30px;
+    padding-left: 7px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.failed_msg {
+    width: 500px;
+    height: 30px;
+    border: 1px solid #D20009;
+    background-color: #F3D9D9;
+    color: #32512D;
+    line-height: 30px;
+    padding-left: 7px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.suc_msg_img {
+    float: left;
+    width: 18px;
+    height: 18px;
+    margin-top: 5px;
+    margin-right: 4px;
+}
+
+
+.adminTable {
+    border-collapse: collapse;
+    width:100%;
+}
+
+    .adminTable th {
+
+        background-color: #EEEEEE;
+        border: 1px solid #DDDDDD;
+        height: 25px;
+        font-size: 12px;
+        text-align: left;
+        padding-left: 10px;
+       
+    }
+
+    .adminTable td {
+        border: 1px solid #DDDDDD;
+        font-size: 12px;
+        padding-left: 10px;
+        height: 20px;
+      
+    }
+
+        .adminTable td img {
+            width: 22px;
+            height: 22px;
+            margin-top: 5px;
+            margin-right: 5px;
+        }
+
+        .adminTable td a:hover {
+            text-decoration: underline;
+        }
+.commonBtn {
+    color: white;
+    background-color: #27A2E6;
+    cursor: pointer;
+    padding: 6px;
+    border: 0;
+    border-radius: 3px 3px 3px 3px;
+    margin-right:10px;
+}
+.commonBtn_net {
+    color: white;
+    background-color: #27A2E6;
+    cursor: pointer;
+    width:80px;
+    height:30px;
+    line-height:30px;
+    border: 0;
+    border-radius: 3px 3px 3px 3px;
+    margin-top:10px;
+}

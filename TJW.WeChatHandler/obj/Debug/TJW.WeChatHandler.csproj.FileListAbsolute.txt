@@ -204,3 +204,13 @@ D:\Project\TJW\Code\TJW\1114\1114\TJW_1114\TJW.WeChatHandler\bin\Debug\TJW.Utils
 D:\Project\TJW\Code\TJW\1114\1114\TJW_1114\TJW.WeChatHandler\obj\Debug\TJW.WeChatHandler.csprojResolveAssemblyReference.cache
 D:\Project\TJW\Code\TJW\1114\1114\TJW_1114\TJW.WeChatHandler\obj\Debug\TJW.WeChatHandler.dll
 D:\Project\TJW\Code\TJW\1114\1114\TJW_1114\TJW.WeChatHandler\obj\Debug\TJW.WeChatHandler.pdb
+D:\MyGit\TJW\TJW\TJW.WeChatHandler\bin\Debug\TJW.WeChatHandler.dll
+D:\MyGit\TJW\TJW\TJW.WeChatHandler\bin\Debug\TJW.WeChatHandler.pdb
+D:\MyGit\TJW\TJW\TJW.WeChatHandler\bin\Debug\Newtonsoft.Json.dll
+D:\MyGit\TJW\TJW\TJW.WeChatHandler\bin\Debug\TJW.Model.dll
+D:\MyGit\TJW\TJW\TJW.WeChatHandler\bin\Debug\TJW.Utils.dll
+D:\MyGit\TJW\TJW\TJW.WeChatHandler\bin\Debug\TJW.Model.pdb
+D:\MyGit\TJW\TJW\TJW.WeChatHandler\bin\Debug\TJW.Utils.pdb
+D:\MyGit\TJW\TJW\TJW.WeChatHandler\obj\Debug\TJW.WeChatHandler.csprojResolveAssemblyReference.cache
+D:\MyGit\TJW\TJW\TJW.WeChatHandler\obj\Debug\TJW.WeChatHandler.dll
+D:\MyGit\TJW\TJW\TJW.WeChatHandler\obj\Debug\TJW.WeChatHandler.pdb

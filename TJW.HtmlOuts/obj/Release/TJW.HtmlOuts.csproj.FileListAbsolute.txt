@@ -325,3 +325,15 @@ D:\Project\TJW\Code\TJW\1114\1114\TJW_1114\TJW.HtmlOuts\bin\Release\TJW.Utils.pd
 D:\Project\TJW\Code\TJW\1114\1114\TJW_1114\TJW.HtmlOuts\obj\Release\TJW.HtmlOuts.csprojResolveAssemblyReference.cache
 D:\Project\TJW\Code\TJW\1114\1114\TJW_1114\TJW.HtmlOuts\obj\Release\TJW.HtmlOuts.dll
 D:\Project\TJW\Code\TJW\1114\1114\TJW_1114\TJW.HtmlOuts\obj\Release\TJW.HtmlOuts.pdb
+D:\MyGit\TJW\TJW\TJW.HtmlOuts\bin\Release\TJW.HtmlOuts.dll
+D:\MyGit\TJW\TJW\TJW.HtmlOuts\bin\Release\TJW.HtmlOuts.pdb
+D:\MyGit\TJW\TJW\TJW.HtmlOuts\bin\Release\TJW.Model.dll
+D:\MyGit\TJW\TJW\TJW.HtmlOuts\bin\Release\TJW.SqlHandler.dll
+D:\MyGit\TJW\TJW\TJW.HtmlOuts\bin\Release\TJW.Utils.dll
+D:\MyGit\TJW\TJW\TJW.HtmlOuts\bin\Release\Newtonsoft.Json.dll
+D:\MyGit\TJW\TJW\TJW.HtmlOuts\bin\Release\TJW.Model.pdb
+D:\MyGit\TJW\TJW\TJW.HtmlOuts\bin\Release\TJW.SqlHandler.pdb
+D:\MyGit\TJW\TJW\TJW.HtmlOuts\bin\Release\TJW.Utils.pdb
+D:\MyGit\TJW\TJW\TJW.HtmlOuts\obj\Release\TJW.HtmlOuts.csprojResolveAssemblyReference.cache
+D:\MyGit\TJW\TJW\TJW.HtmlOuts\obj\Release\TJW.HtmlOuts.dll
+D:\MyGit\TJW\TJW\TJW.HtmlOuts\obj\Release\TJW.HtmlOuts.pdb

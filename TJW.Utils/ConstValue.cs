@@ -57,13 +57,13 @@ namespace TJW.Utils
         public const string AppSecret = "ce554806ee5c5af98c44d2918017f754";
 
         //event
-        public const string WCMenuName1 = "时尚资讯";
+        public const string WCMenuName1 = "进入主页";
         public const string WCMenuKey1 = "news";
 
         public const string WCMenuName2 = "最新活动";
         public const string WCMenuKey2 = "action";
 
-        public const string WCMenuName3_1 = "联系我们";
+        public const string WCMenuName3_1 = "关于天街";
         public const string WCMenuKey3_1 = "contact";
 
         public const string WCMenuName3_2 = "私人定制";
