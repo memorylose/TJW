@@ -32,7 +32,7 @@ namespace TJW.UI
                         urlPager = Page.RouteData.Values["Pager"].ToString();
                     }
 
-                    if (string.Equals(urlParam, "2") || string.Equals(urlParam, "3") || string.Equals(urlParam, "5") || string.Equals(urlParam, "17"))
+                    if (string.Equals(urlParam, "2") || string.Equals(urlParam, "3") || string.Equals(urlParam, "5") || string.Equals(urlParam, "17") || string.Equals(urlParam, "18"))
                     {
                         SetTitle(urlParam);
                         GetList(" WHERE PictureTypeId IN (" + urlParam + ") ", "");

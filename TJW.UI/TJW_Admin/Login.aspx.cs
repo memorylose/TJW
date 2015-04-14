@@ -49,40 +49,44 @@ namespace TJW.UI.TJW_Admin
             {
                 MessageTools.ShowMessage(msgId, ref Msg, "用户名密码不能为空");
             }
-
-            //Check 3 times user name and ip address
-            else if (!sh_adminLogin.CheckSameUserLimit(txtUsername.Value))
-            {
-                //Check browser cookie
-                if (Request.Cookies["CheckCode"] == null)
-                {
-                    MessageTools.ShowMessage(msgId, ref Msg, "您的浏览器设置已被禁用 Cookies，您必须设置浏览器允许使用 Cookies 选项后才能使用本系统。");
-                    ClearInput();
-                }
-                else
-                {
-                    ShowValidateCode();
-
-                    //Check the first submit(the first submit should only display validate code, not submit)
-                    if (string.Compare(txtVerify.Value, string.Empty) != 0)
-                    {
-                        //Check validate code
-                        if (String.Compare(Request.Cookies["CheckCode"].Value, txtVerify.Value.Trim(), true) != 0)
-                        {
-                            MessageTools.ShowMessage(msgId, ref Msg, "验证码错误");
-                            ClearValidateCode();
-                        }
-                        else
-                        {
-                            CheckPassword(txtUsername.Value.Trim(), txtPassword.Value.Trim());
-                        }
-                    }
-                }
-            }
             else
             {
                 CheckPassword(txtUsername.Value.Trim(), txtPassword.Value.Trim());
             }
+
+            ////Check 3 times user name and ip address
+            //else if (!sh_adminLogin.CheckSameUserLimit(txtUsername.Value))
+            //{
+            //    //Check browser cookie
+            //    if (Request.Cookies["CheckCode"] == null)
+            //    {
+            //        MessageTools.ShowMessage(msgId, ref Msg, "您的浏览器设置已被禁用 Cookies，您必须设置浏览器允许使用 Cookies 选项后才能使用本系统。");
+            //        ClearInput();
+            //    }
+            //    else
+            //    {
+            //        ShowValidateCode();
+
+            //        //Check the first submit(the first submit should only display validate code, not submit)
+            //        if (string.Compare(txtVerify.Value, string.Empty) != 0)
+            //        {
+            //            //Check validate code
+            //            if (String.Compare(Request.Cookies["CheckCode"].Value, txtVerify.Value.Trim(), true) != 0)
+            //            {
+            //                MessageTools.ShowMessage(msgId, ref Msg, "验证码错误");
+            //                ClearValidateCode();
+            //            }
+            //            else
+            //            {
+            //                CheckPassword(txtUsername.Value.Trim(), txtPassword.Value.Trim());
+            //            }
+            //        }
+            //    }
+            //}
+            //else
+            //{
+            //    CheckPassword(txtUsername.Value.Trim(), txtPassword.Value.Trim());
+            //}
         }
 
         #region Set login cookie
