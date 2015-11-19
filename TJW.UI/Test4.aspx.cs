@@ -34,7 +34,7 @@ namespace TJW.UI
             }
             return sb.ToString();
         }
-        
+
 
 
         private static string FindColorName(Color argbColor)
@@ -54,6 +54,11 @@ namespace TJW.UI
             }
 
             return null;
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            string test = Request["test1"].ToString();
         }
     }
 }

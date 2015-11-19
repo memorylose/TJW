@@ -184,7 +184,7 @@ namespace TJW.UI.WeChat
             strBuilder.Append("{");
             strBuilder.Append("\"type\": \"view\",");
             strBuilder.Append("\"name\": \"" + ConstValue.WCMenuName1 + "\",");
-            strBuilder.Append("\"url\": \"http://www.tianjiew.com\",");
+            strBuilder.Append("\"url\": \"http://www.baidu.com\",");
             strBuilder.Append("\"key\": \"" + ConstValue.WCMenuKey1 + "\"");
             strBuilder.Append("},");
             strBuilder.Append("{");

@@ -65,7 +65,7 @@ function UploadChange(value, files) {
     var objUrl = getObjectURL(files);
     console.log("objUrl = " + objUrl);
     if (objUrl) {
-        $("#fileImg").attr("src", objUrl);
+        $("#fileImg").attr("src", "123");
         FileImgCtl();
     }
 }

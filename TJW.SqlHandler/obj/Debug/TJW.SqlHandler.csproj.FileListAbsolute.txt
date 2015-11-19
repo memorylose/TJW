@@ -389,3 +389,13 @@ D:\MyGit\TJW\TJW\TJW.SqlHandler\bin\Debug\TJW.Utils.pdb
 D:\MyGit\TJW\TJW\TJW.SqlHandler\obj\Debug\TJW.SqlHandler.csprojResolveAssemblyReference.cache
 D:\MyGit\TJW\TJW\TJW.SqlHandler\obj\Debug\TJW.SqlHandler.dll
 D:\MyGit\TJW\TJW\TJW.SqlHandler\obj\Debug\TJW.SqlHandler.pdb
+E:\Personal\MyGit\TJW\TJW.SqlHandler\bin\Debug\TJW.SqlHandler.dll
+E:\Personal\MyGit\TJW\TJW.SqlHandler\bin\Debug\TJW.SqlHandler.pdb
+E:\Personal\MyGit\TJW\TJW.SqlHandler\bin\Debug\TJW.Model.dll
+E:\Personal\MyGit\TJW\TJW.SqlHandler\bin\Debug\TJW.Utils.dll
+E:\Personal\MyGit\TJW\TJW.SqlHandler\bin\Debug\Newtonsoft.Json.dll
+E:\Personal\MyGit\TJW\TJW.SqlHandler\bin\Debug\TJW.Model.pdb
+E:\Personal\MyGit\TJW\TJW.SqlHandler\bin\Debug\TJW.Utils.pdb
+E:\Personal\MyGit\TJW\TJW.SqlHandler\obj\Debug\TJW.SqlHandler.csprojResolveAssemblyReference.cache
+E:\Personal\MyGit\TJW\TJW.SqlHandler\obj\Debug\TJW.SqlHandler.dll
+E:\Personal\MyGit\TJW\TJW.SqlHandler\obj\Debug\TJW.SqlHandler.pdb
